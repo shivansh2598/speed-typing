@@ -2,11 +2,15 @@ const RANDOM_QUOTE_API_URL = 'http://api.quotable.io/random';
 const quoteDisplayElement = document.getElementById('quoteDisplay');
 const quoteInputElement = document.getElementById('quoteInput');
 const timerElement = document.getElementById('timer')
+const result = document.getElementById("result");
 
-var start = 0;
-var timerControl;
+let start = 0;
+let timerControl;
+let score1=0;
+let score=0;
 
 quoteInputElement.addEventListener('input', ()=> {
+    score1=0;
     if(start==0)
     {
         timerElement.innerText=1;
@@ -28,6 +32,7 @@ quoteInputElement.addEventListener('input', ()=> {
         {
             characterSpan.classList.add('correct');
             characterSpan.classList.remove('incorrect');
+            score1+=1;
         }
         else
         {
@@ -38,10 +43,9 @@ quoteInputElement.addEventListener('input', ()=> {
     })
 
     if(correct){
+        score+=score1;
+        score1=0;
         renderNewQuote();
-        start=0;
-        clearInterval(timerControl);
-        timerElement.innerText=0;       
     }
 })
 
@@ -66,10 +70,26 @@ let startTime;
 
 function startTimer()
 {
+    result.visible=false;
     startTime = new Date();
     timerControl=setInterval(()=> {
-        timerElement.innerText=getTimerTime();
+        let time;
+        time=getTimerTime();
+        timerElement.innerText=time;
+        if(time===60)
+        stopTimer();
     },1000)
+}
+
+function stopTimer()
+{
+    score+=score1;
+    clearInterval(timerControl);
+    // start=0;
+    quoteInputElement.disabled=true;
+    result.visible=true;
+    result.innerHTML=`<h2>Your speed is ${score} CPM.</h2>`;
+    score=0;
 }
 
 function getTimerTime() {

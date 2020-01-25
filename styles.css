@@ -3,16 +3,35 @@
 }
 
 body{
+    margin: 0;
+    /* background-color: #1E0555; */
+}
+
+.startDiv{
+    background-color: #1E0555;
+    margin: 0px;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.header{
+    text-align: center;
+    margin: 0px 0px 30px;
+    /* margin-bottom: 5px; */
+    font-size: 3rem;
+}
+
+.game , .quote-input {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.game{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 40vh;
     margin: 0;
-    background-color: #1E0555;
-}
-
-body, .quote-input {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%); */
+    /* background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%); */
 }
 
 .container{
@@ -24,11 +43,9 @@ body, .quote-input {
 }
 
 .timer {
-    position: absolute;
-    top:2rem;
     font-size: 3rem;
-    color: #F0DB4f;
     font-weight: bold;
+    text-align: center;
 }
 
 .quote-display {
@@ -36,6 +53,7 @@ body, .quote-input {
     margin-left: calc(1rem + 2px);
     margin-right: calc(1rem + 2px);
     font-size: 1.7rem;
+    color:black;
 }
 
 .quote-input {
@@ -62,6 +80,10 @@ body, .quote-input {
 .incorrect {
     color: red;
     text-decoration: underline;
+}
+
+.result{
+    text-align: center;
 }
 
 
