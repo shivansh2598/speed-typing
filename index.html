@@ -6,21 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="navbar.css">
     <script src="script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script>
+        $(function () {
+            $("#includedContent").load("navbar.html");
+        });
+    </script>
     <title>Speed Typing</title>
 </head>
 
 <body>
-    <div class="topnav" id="myTopnav">
-        <a href="#home">Home</a>
-        <a href="./resume.pdf">Resume</a>
-        <a href="#project">Projects</a>
-        <a href="#blog">Blog</a>
-        <a href="#about">About</a>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-      </div>
+    <div id=includedContent></div>
     <div class="bodi">
         <div class="container first">
             <div class="row">
@@ -35,7 +35,11 @@
         </div>
         <br>
         <div class="container first">
-            <h2 style="padding-top: 100px; padding-bottom: 100px;"><i>I am a MERN stack developer and have keen interest in Blockchain & Networking. I also love to explore cloud services provided by AWS, GCP etc. My hobbies include playing sports { badminton, cricket and I can go on and on..}. Also I love typing and challenge myself to improve my typing speed, so I made my own Speed Typing app. Go ahead and try it!!<i></h2>
+            <h2 style="padding-top: 100px; padding-bottom: 100px;"><i>I am a MERN stack developer and have keen interest
+                    in Blockchain & Networking. I also love to explore cloud services provided by AWS, GCP etc. My
+                    hobbies include playing sports { badminton, cricket and I can go on and on..}. Also I love typing
+                    and challenge myself to improve my typing speed, so I made my own Speed Typing app. Go ahead and try
+                    it!!<i></h2>
         </div>
         <br>
         <div class="startDiv">
@@ -54,13 +58,14 @@
     </div>
     <script>
         function myFunction() {
-          var x = document.getElementById("myTopnav");
-          if (x.className === "topnav") {
-            x.className += " responsive";
-          } else {
-            x.className = "topnav";
-          }
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
         }
-        </script>
+    </script>
 </body>
+
 </html>
