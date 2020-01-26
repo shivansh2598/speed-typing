@@ -35,7 +35,7 @@ body{
         /* background-color: #1E0555; */
         margin: 0px;
         background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
-        margin: 0% 10% 0% 10%;
+        margin: 0% 5% 0% 5%;
         border-radius: 30%;
     }
     .text{
@@ -54,7 +54,6 @@ body{
         /* background-color: #1E0555; */
         margin: 0px;
         background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
-        margin: 0% 0% 0% 0%;
         border-radius: 30%;
         
     }
