@@ -1,20 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="project.css">
     <title>Projects</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script>
         $(function () {
             $("#includedContent").load("navbar.html");
         });
     </script>
 </head>
+
 <body style="margin: 0px;">
     <div id=includedContent></div>
-    
+    <H2 style="text-align: center; margin: 2vh">All my projects with details are listed below:-</H2>
+    <div class="container projectSection">
+        <div class="row">
+            <div class="col-sm-6 imz" style="padding: 0px;">
+                <img class="image" src='./projectImage/bitzoom.png' />
+            </div>
+            <div class="col-sm-6">
+                <h2 style="color:blueviolet">Bitzoom 2.0</h2>
+                <ul>
+                    <li><h5>Skills Used - REACT, JavaScript, NodeJS, MongoDB,GITHUB.</h5></li>
+                    <li><h5>Bitzoom runs on BIT Mesra's LAN. This website contains previous year question papers and
+                    notes that are needed for semester exams. Bitzoom has over 300 users.</h5></li>
+                    <li><h5>Github link :- <a href="https://github.com/shivansh2598/bitzoomFrontend" target="_blank">Click</a></h5></li>
+                    <li><h5>Facebook page :-<a href="https://www.facebook.com/bitzoom2.0/" target="_blank">Click</a></h5></li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div class="margin"></div>
+        <br>
+        <div class="row">
+            <div class="col-sm-6 imz" style="padding: 0px;">
+                <img class="image" src='./projectImage/pantheon.png' />
+            </div>
+            <div class="col-sm-6">
+                <h2 style="color:blueviolet">Pantheon 2K19</h2>
+                <ul>
+                    <li><h5>Skills Used - HTML, CSS, JavaScript, NodeJS, MongoDB, GITHUB.</h5></li>
+                    <li><h5>Pantheon is the annual cultural fest Birla Institute of Technology, Mesra.</h5></li>
+                    <li><h5>Pantheon 2K19 was a team project in which I mainly contributed in writing the backend code.</h5></li>
+                    <li><h5>Team Member :- Abhishek Aryan, Sanskar Agrawal and 2nd year juniors.</h5></li>
+                    <li><h5>Website link :- <a href="https://pantheonbit.com/" target="_blank">Click</a></h5></li>
+                    <li><h5>Facebook page :-<a href="https://www.facebook.com/bitmesra.pantheon/" target="_blank">Click</a></h5></li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div class="margin"></div>
+        <br>
+        <div class="row">
+            <div class="col-sm-6 imz" style="padding: 0px;">
+                <img class="image" src='./projectImage/nzec.jpg' />
+            </div>
+            <div class="col-sm-6">
+                <h2 style="color:blueviolet">Hackabit NZEC</h2>
+                <ul>
+                    <li><h5>Skills Used - REACT, Flask, Networking, GITHUB, AWS.</h5></li>
+                    <li><h5>NZEC was our hackathon (hackabit) project. We used openCV in raspberry pi to detect objects nearby and converted it into audio output to help visually challenged people. </h5></li>
+                    <li><h5>Team Members:- Suvid Sahay, Ankit Gupta, Rahul Kumar.</h5></li>
+                    <li><h5>Github link :- <a href="https://github.com/hackabit19/NZEC" target="_blank">Click</a></h5></li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div class="margin"></div>
+        <br>
+        <div class="row">
+            <div class="col-sm-6 imz" style="padding: 0px;">
+                <img class="image" src='./projectImage/codeforces.png' />
+            </div>
+            <div class="col-sm-6">
+                <h2 style="color:blueviolet">Codeforces Portfolio Analysis</h2>
+                <ul>
+                    <li><h5>Skills Used - HTML, CSS, HighCharts, Codeforce's Api, GITHUB, AWS.</h5></li>
+                    <li><h5>Github link :- <a href="https://github.com/shivansh2598/codeforces_portfolio_analysis" target="_blank">Click</a></h5></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
+
 </html>
