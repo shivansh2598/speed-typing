@@ -12,27 +12,30 @@ body{
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 700px) {
     .bodi{
-        margin: 0% 0% 0% 0%;
-        /* background-color: #1E0555; */
-        /* background-image: linear-gradient(to right bottom, #d87fc8, #c1a6ea, #b7c7f7, #c8e0f7, #eff4f6); */
+        margin: 0% 0% 0% 0%
     }
     .startDiv{
-        /* background-color: #1E0555; */
         margin: 0px;
         background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
         margin: 0% 0% 0% 0%;
         border-radius: 30%;
     }
+    .quote-display {
+      margin-bottom: 1rem;
+      margin-left: calc(1rem + 2px);
+      margin-right: calc(1rem + 2px);
+      font-size: 1.7rem;
+      color:black;
+      max-height: 300px;
+      overflow-y: auto;
+  }
 }
 
 @media only screen and (min-width: 701px) and (max-width:991px) {
     .bodi{
         margin: 0% 0% 0% 0%;
-        /* background-color: #1E0555; */
-        /* background-image: linear-gradient(to right bottom, #d87fc8, #c1a6ea, #b7c7f7, #c8e0f7, #eff4f6); */
     }
     .startDiv{
-        /* background-color: #1E0555; */
         margin: 0px;
         background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
         margin: 0% 5% 0% 5%;
@@ -41,17 +44,23 @@ body{
     .text{
         padding-top:100px;
     }
+    .quote-display {
+      margin-bottom: 1rem;
+      margin-left: calc(1rem + 2px);
+      margin-right: calc(1rem + 2px);
+      font-size: 1.7rem;
+      color:black;
+      max-height: 400px;
+      overflow-y: auto;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .bodi{
         margin: 0% 20% 0% 20%;
-        /* background-color: #1E0555; */
-        /* background-image: linear-gradient(to right bottom, #d87fc8, #c1a6ea, #b7c7f7, #c8e0f7, #eff4f6); */
     }
     .startDiv{
-        /* background-color: #1E0555; */
         margin: 0px;
         background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
         border-radius: 30%;
@@ -60,6 +69,15 @@ body{
     .text{
         padding-top:200px;
     }
+    .quote-display {
+      margin-bottom: 1rem;
+      margin-left: calc(1rem + 2px);
+      margin-right: calc(1rem + 2px);
+      font-size: 1.7rem;
+      color:black;
+      max-height: 500px;
+      overflow-y: auto;
+  }
 }
 
 
@@ -68,12 +86,11 @@ body{
 .header{
     text-align: center;
     margin: 0px 0px 30px;
-    /* margin-bottom: 5px; */
-    /* font-size: 3rem; */
 }
 
 .game , .quote-input {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
 }
 
 .game{
@@ -82,12 +99,7 @@ body{
     align-items: center;
     min-height: 40vh;
     margin: 0;
-    /* background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%); */
-    /* background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%); */
 }
-
-/* .imageMain{
-} */
 
 .myImg{
     width:100%;
@@ -104,18 +116,9 @@ body{
 }
 
 .timer {
-    /* font-size: 3rem; */
     font-weight: bold;
     text-align: center;
     margin-bottom: 0px !important;
-}
-
-.quote-display {
-    margin-bottom: 1rem;
-    margin-left: calc(1rem + 2px);
-    margin-right: calc(1rem + 2px);
-    font-size: 1.7rem;
-    color:black;
 }
 
 .quote-input {

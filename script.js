@@ -1,4 +1,4 @@
-const RANDOM_QUOTE_API_URL = "http://api.quotable.io/random";
+const RANDOM_QUOTE_API_URL = "https://thetypingcat.com/api/tests";
 const quoteDisplayElement = document.getElementById("quoteDisplay");
 const quoteInputElement = document.getElementById("quoteInput");
 const timerElement = document.getElementById("timer");
@@ -46,11 +46,12 @@ quoteInputElement.addEventListener("input", () => {
 function getRandomQuote() {
   return fetch(RANDOM_QUOTE_API_URL)
     .then(response => response.json())
-    .then(data => data.content);
+    .then(data => data.json.fixtures);
 }
 
 async function renderNewQuote() {
-  const quote = await getRandomQuote();
+  let quote = await getRandomQuote();
+  quote = filterData(quote);
   quoteDisplayElement.innerText = "";
   quote.split("").forEach(character => {
     const characterSpan = document.createElement("span");
@@ -86,6 +87,14 @@ function stopTimer() {
 function getTimerTime() {
   const time = Math.floor((new Date() - startTime) / 1000);
   return time + 1;
+}
+
+function filterData(quote) {
+  quote = quote.slice(22, 540);
+  quote = quote.replace(/[^a-zA-Z ]/g, " ");
+  quote = quote.replace(/  +/g, ' ');
+  quote = quote+".";
+  return quote;
 }
 
 renderNewQuote();
