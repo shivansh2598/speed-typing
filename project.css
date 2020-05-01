@@ -33,3 +33,12 @@ body{
     border-top-width: 0px;
     border-bottom-width: 5px;
 }
+
+.awesome_font1{
+  font-family: header_font;
+  margin-left: 5%;
+}
+@font-face{
+  font-family: "header_font";
+  src: url("./bubbles.ttf") format("truetype");
+}

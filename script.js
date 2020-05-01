@@ -91,7 +91,7 @@ function getTimerTime() {
 
 function filterData(quote) {
   quote = quote.slice(22, 540);
-  quote = quote.replace(/[^a-zA-Z ]/g, " ");
+  quote = quote.replace(/[^a-zA-Z]/g, " ");
   quote = quote.replace(/  +/g, ' ');
   quote = quote+".";
   return quote;
