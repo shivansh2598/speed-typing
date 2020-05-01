@@ -29,6 +29,10 @@ body{
       max-height: 250px;
       overflow-y: auto;
   }
+  .footer{
+    font-size: 15px;
+    border-radius: 7%;
+  }
 }
 
 @media only screen and (min-width: 701px) and (max-width:991px) {
@@ -52,6 +56,10 @@ body{
       color:black;
       max-height: 400px;
       overflow-y: auto;
+  }
+  .footer{
+    font-size: 18px;
+    border-radius: 7%;
   }
 }
 
@@ -77,6 +85,10 @@ body{
       color:black;
       max-height: 500px;
       overflow-y: auto;
+  }
+  .footer{
+    font-size: 22px;
+    border-radius: 7%;
   }
 }
 

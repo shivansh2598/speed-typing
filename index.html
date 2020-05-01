@@ -2,99 +2,101 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="navbar.css">
-    <script src="script.js" defer></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="shortcut icon" type="image/jpg" href="./emoji.png"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script>
-        $(function () {
-            $("#includedContent").load("navbar.html");
-        });
-    </script>
-    <title>Portfolio &#128526</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="navbar.css">
+  <script src="script.js" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="shortcut icon" type="image/jpg" href="./emoji.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script>
+    $(function () {
+      $("#includedContent").load("navbar.html");
+      $("#footer").load("footer.html")
+    });
+  </script>
+  <title>Portfolio &#128526</title>
 </head>
 
 <body>
-    <div id=includedContent></div>
-    <div class="bodi">
-        <div class="container first">
-            <div class="row">
-                <div class="col-md-6" style="padding: 0px;">
-                    <img class="myImg" src="shivansh.png" />
-                </div>
-                <div class="col-md-6 text">
-                    <img class="face" style="display: block; margin-left: auto; margin-right: auto;" src="rocket.png" />
-                    <h2 class="awesome_font1" style="text-align: center;">Hey there, I am Shivansh!</h2>
-                </div>
-            </div>
+  <div id=includedContent></div>
+  <div class="bodi">
+    <div class="container first">
+      <div class="row">
+        <div class="col-md-6" style="padding: 0px;">
+          <img class="myImg" src="shivansh.png" />
         </div>
-        <br>
-        <div class="container first">
-            <h1 class="awesome_font1 " style="text-align: center;">Something about me..</h1>
-            <h3 style="padding-top: 30px;text-align: center;"><i>Hello All, I am a college junior in Birla Institute of
-                    Technology, pursuing Computer Science Engineering. I am a MERN stack developer and have keen interest
-                    in Devops. My areas of interest include:-<i></h3>
-            <ul>
-                <li>
-                    <h4>Web Development :- HTML,CSS,Javascript,<br>React,Nodejs,Golang,<br>Mysql,MongoDb.</h4>
-                </li>
-                <li>
-                    <h4>Cloud Services :- AWS (EC2, S3, Lambda, IAM, Route53, SNS, Load Balancer(classical and application), CloudWatch etc..), GCP (Compute, Cloud DNS, Load Balancer etc..), Digital Ocean</h4>
-                </li>
-                <li>
-                    <h4>Devops :- Docker, Docker Swarm, AWS, GIT.</h4>
-                </li>
-                <li>
-                    <h4>Data Strucutres and Algorithms.</h4>
-                </li>
-                <li>
-                    <h4>Networking, Operating System [Ubuntu].</h4>
-                </li>
-                <!-- <li>
-                    <h4>Blockchain :- Solidity, Ethereum, Ganache, Truffle.</h4>
-                </li> -->
-            </ul>
-            <h3 style="padding-top: 30px; padding-bottom: 30px;text-align: center;"><i>I am a sports lover, a traveller and a coffee addict
-                    &#128523.<i></h3>
-            <h3 style="padding-top: 30px; padding-bottom: 60px; text-align: center;"><i>Last but not the least, I love typing. So I have made a typing game down below. Do give it a shot and find out your typing speed.</i></h3>
+        <div class="col-md-6 text">
+          <img class="face" style="display: block; margin-left: auto; margin-right: auto;" src="rocket.png" />
+          <h2 class="awesome_font1" style="text-align: center;">Hey there, I am Shivansh!</h2>
         </div>
-        <br>
-        <div class="startDiv">
-            <h1 class=" header awesome_font1 " style="padding-top:20px">Speed typing</h1>
-            <h2 class="timer" id="timer">0</h2>
-            <div class="game">
-                <div class="containers">
-                    <div class="quote-display" id="quoteDisplay"></div>
-                    <textarea id="quoteInput" class="quote-input"
-                        placeholder="Start typing here, to check your speed ..."></textarea>
-                </div>
-            </div>
-            <div class=result id=result></div>
-            <br>
-        </div>
+      </div>
     </div>
     <br>
-    <footer class="py-2 bg-dark text-white-50">
-        <div class="container text-center">
-          <small>Contact@ Email Id:-shivanshsinha2598@gmail.com , <a href='https://github.com/shivansh2598' target="_blank">Github</a>, <a href="https://www.instagram.com/shivanshsinha2598/">Instagram</a></small>
+    <div class="container first">
+      <h1 class="awesome_font1 " style="text-align: center;">Something about me..</h1>
+      <h3 style="padding-top: 30px;text-align: center;"><i>Hello All, I am a college junior in Birla Institute of
+          Technology, pursuing Computer Science Engineering. I am a MERN stack developer and have keen interest
+          in Devops. My areas of interest include:-<i></h3>
+      <ul>
+        <li>
+          <h4>Web Development :- HTML,CSS,Javascript,<br>React,Nodejs,Golang,<br>Mysql,MongoDb.</h4>
+        </li>
+        <li>
+          <h4>Cloud Services :- AWS (EC2, S3, Lambda, IAM, Route53, SNS, Load Balancer(classical and application),
+            CloudWatch etc..), GCP (Compute, Cloud DNS, Load Balancer etc..), Digital Ocean</h4>
+        </li>
+        <li>
+          <h4>Devops :- Docker, Docker Swarm, AWS, GIT.</h4>
+        </li>
+        <li>
+          <h4>Data Strucutres and Algorithms.</h4>
+        </li>
+        <li>
+          <h4>Networking, Operating System [Ubuntu].</h4>
+        </li>
+        <!-- <li>
+                    <h4>Blockchain :- Solidity, Ethereum, Ganache, Truffle.</h4>
+                </li> -->
+      </ul>
+      <h3 style="padding-top: 10px; padding-bottom: 10px;text-align: center;"><i>I am a sports lover, a traveller and a
+          coffee addict
+          &#128523.<i></h3>
+      <h3 style="padding-top: 10px; padding-bottom: 10px;text-align: center;">Watch my youtube videos at <a href="https://www.youtube.com/channel/UCZPpmeXDCMjBWWOG6dilmDA?" target="_blank"> <i class="fa fa-youtube"></i></a> </h3>
+      <h3 style="padding-top: 10px; padding-bottom: 20px; text-align: center;"><i>Last but not the least, I love typing.
+          So I have made a typing game down below. Do give it a shot and find out your typing speed.</i></h3>
+    </div>
+    <br>
+    <div class="startDiv">
+      <h1 class=" header awesome_font1 " style="padding-top:20px">Speed typing</h1>
+      <h2 class="timer" id="timer">0</h2>
+      <div class="game">
+        <div class="containers">
+          <div class="quote-display" id="quoteDisplay"></div>
+          <textarea id="quoteInput" class="quote-input"
+            placeholder="Start typing here, to check your speed ..."></textarea>
         </div>
-      </footer>
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
+      </div>
+      <div class=result id=result></div>
+      <br>
+    </div>
+  </div>
+  <br>
+  <div id="footer"></div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
 </body>
 
 </html>
