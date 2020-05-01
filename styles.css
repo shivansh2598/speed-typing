@@ -2,6 +2,17 @@
     box-sizing: border-box;
 }
 
+#loading{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper{
+  visibility: hidden;
+}
+
 body{
     /* background-color: black !important; */
     margin: 0% 20% 0% 20%;

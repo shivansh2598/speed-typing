@@ -60,3 +60,14 @@ body{
   font-family: "header_font";
   src: url("./bubbles.ttf") format("truetype");
 }
+
+#loading{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper{
+  visibility: hidden;
+}
