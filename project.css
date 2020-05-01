@@ -19,14 +19,23 @@ body{
     border-bottom-width: 0px;
   }
   .footer{
-    font-size: 18px;
+    font-size: 15px;
     border-radius: 7%;
   }
 }
 
-.footer{
-  font-size: 22px;
-  border-radius: 7%;
+@media only screen and (min-width: 701px) and (max-width:991px) {
+  .footer{
+    font-size: 18px;
+    border-radius: 7%;
+  }  
+}
+
+@media only screen and (min-width: 992px) {
+  .footer{
+    font-size: 22px;
+    border-radius: 7%;
+  }  
 }
 
 .image {
