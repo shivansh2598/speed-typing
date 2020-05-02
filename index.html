@@ -79,7 +79,7 @@
             So I have made a typing game down below. Do give it a shot and find out your typing speed.</i></h3>
       </div>
       <br>
-      <div class="container startDiv">
+      <div id="fastTyping" class="container startDiv">
         <h1 class=" header awesome_font1 " style="padding-top:20px">Speed typing</h1>
         <h2 class="timer" id="timer">0</h2>
         <div class="game">
@@ -100,7 +100,10 @@
     $(function () {
       $("#includedContent").load("navbar.html");
       $("#footer").load("footer.html")
+      $('#quoteInput').bind("cut copy paste",function(e) {
+     e.preventDefault();
     });
+ });
   </script>
   <script>
     function myFunction() {
