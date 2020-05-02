@@ -17,7 +17,7 @@
     $(document).ready(function () {
       setTimeout(function () {
         $('#loading').fadeOut();
-        $(".wrapper").css("visibility","visible")
+        $(".wrapper").css("visibility", "visible")
       }, 2000);
     });
   </script>
@@ -84,7 +84,7 @@
         <h2 class="timer" id="timer">0</h2>
         <div class="game">
           <div class="containers">
-            <div class="quote-display" id="quoteDisplay"></div>
+            <div class="quote-display" ondragstart="return false;" draggable="false" id="quoteDisplay"></div>
             <textarea id="quoteInput" class="quote-input"
               placeholder="Start typing here, to check your speed ..."></textarea>
           </div>
@@ -100,10 +100,11 @@
     $(function () {
       $("#includedContent").load("navbar.html");
       $("#footer").load("footer.html")
-      $('#quoteInput').bind("cut copy paste",function(e) {
-     e.preventDefault();
+      $('#quoteInput').bind("cut copy paste contextmenu", function (e) {
+        e.preventDefault();
+        return false;
+      });
     });
- });
   </script>
   <script>
     function myFunction() {
